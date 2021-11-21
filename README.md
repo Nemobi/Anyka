@@ -1,19 +1,19 @@
 
 
-*** About the device***
+## About the device ##
 
 Anyka is a subdevision of Shenzen [citation needed] and a manufacturer of video-enabled SoC's. There are
 many different brands of wifi-cameras which use Anyka chips, and many can be found in cheap security cameras on markets such as Amazon, Banggood and Ali-Express.
 
 These devices are (in my exprecience) always tied to a companion app for Android or iOS, which you can use to change settings and watch a live feed from the camera or recordings from the SD card. What companion app a specific device is intended for isn't disclosed at the time of purchase, instead you get a QR-encoded shortened url which directs you to a download. Usually this redirects to Google Play or Apple App Store, but sometimes you end up with a simple html page with an apk-file which you need to side-load to use.
  
-*** Security concerns ***
+## Security concerns ##
 
 Buying a wifi-enabled device and putting it on your home network is dangerous for multiple reasons. You have no control over how the device interacts with your other devices, what it records in terms of your network traffic, and with theese specific devices being video recording devices, where those video streams end up.
 
 And since many of theese devices have the ability for OTA firmware updates, even if your device is well behaved and do nothing nafarious at this time, that might change at any moment. A motivated government can at the push of a button turn your device into a member of a botnet zombie army.
 
-*** Security concerns Part II, the companion app ***
+## Security concerns Part II, the companion app ##
 
 As mentioned previously, the camera usually requires a companion app to use. These apps have a tendency to request addisional permissions, and shuts down if these aren't granted.
 
@@ -23,10 +23,10 @@ This device requests permission to access your phones storage, which is legitima
 
 If you disable Wifi on your phone you will notice that you still have access to your video feed. This means that live video in your home is retransmitted to a server that the manufacturer has control over before it is relayed relayed to your phone.
 
-*** About this repo *** 
+## About this repo ## 
 My atempt here is to harden the device and make it usable without the companion app, and stop it from retransmitting the video feed outside of my local network. The most basic requirement is to get RTSP/RTP running, or an mjpeg server.  
 
-*** Breaking into the device ***
+## Breaking into the device ##
 
 The devices I'm focused on here all have Telnet running on port 23. Connecting to the device will present you with
 ```
