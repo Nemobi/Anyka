@@ -1,0 +1,189 @@
+Booting Linux on physical CPU 0
+Linux version 3.4.35 (win@ubuntu) (gcc version 4.8.5 (anyka (gcc-4.8.5 + binutils-2.24 + ulcibc-0.9.33.2)(20170223)) ) #123 Sat Jul 3 16:41:13 CST 2021
+CPU: ARM926EJ-S [41069265] revision 5 (ARMv5TEJ), cr=00053177
+CPU: VIVT data cache, VIVT instruction cache
+Machine: CLOUD39EV3_AK3918EV300_MNBD
+Memory policy: ECC disabled, Data cache writeback
+ANYKA CPU AK3918 (ID 0x20160100)
+On node 0 totalpages: 7680
+free_area_init_node: node 0, pgdat c03ef2bc, node_mem_map c0416000
+  Normal zone: 60 pages used for memmap
+  Normal zone: 0 pages reserved
+  Normal zone: 7620 pages, LIFO batch:0
+pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+pcpu-alloc: [0] 0 
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 7620
+Kernel command line: console=ttySAK0,115200n8 root=/dev/mtdblock4 rootfstype=squashfs init=/sbin/init mem=64M memsize=64M
+PID hash table entries: 128 (order: -3, 512 bytes)
+Dentry cache hash table entries: 4096 (order: 2, 16384 bytes)
+Inode-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Memory: 30MB = 30MB total
+Memory: 26152k/26152k available, 4568k reserved, 0K highmem
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    vmalloc : 0xc2000000 - 0xff000000   ( 976 MB)
+    lowmem  : 0xc0000000 - 0xc1e00000   (  30 MB)
+    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+      .text : 0xc0008000 - 0xc03ae000   (3736 kB)
+      .init : 0xc03ae000 - 0xc03c9000   ( 108 kB)
+      .data : 0xc03ca000 - 0xc03f0198   ( 153 kB)
+       .bss : 0xc03f01bc - 0xc0411168   ( 132 kB)
+SLUB: Genslabs=13, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+NR_IRQS:117
+sched_clock: 32 bits at 12MHz, resolution 83ns, wraps every 357913ms
+AK39 console driver initial
+console [ttySAK0] enabled
+Calibrating delay loop... 199.06 BogoMIPS (lpj=995328)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+CPU: Testing write buffer coherency: ok
+Setting up static identity map for 0x824e0fc8 - 0x824e1020
+devtmpfs: initialized
+NET: Registered protocol family 16
+On-chip L2 memory initialized
+AK39 clocks: CPU 400MHz, MEM 400MHz, ASIC 120MHz
+Anyka platform share gpio locks initialize.
+bio: create slab <bio-0> at 0
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+i2c-ak39 i2c-ak39: Unable to achieve desired frequency 300KHz. Lowest achievable 312KHz
+i2c-ak39 i2c-ak39: i2c-0: AK39 I2C adapter
+Linux video capture interface: v2.00
+cfg80211: Calling CRDA to update world regulatory domain
+Switching to clocksource ak_timer5 cs
+NET: Registered protocol family 2
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+TCP: Hash tables configured (established 1024 bind 1024)
+TCP: reno registered
+UDP hash table entries: 256 (order: 0, 4096 bytes)
+UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+exFAT: Version 1.2.9
+jffs2: version 2.2. © 2001-2006 Red Hat, Inc.
+msgmni has been set to 51
+io scheduler noop registered
+io scheduler cfq registered (default)
+AK39xx uart driver init, (c) 2013 ANYKA
+ak39-uart.0: ttySAK0 at MMIO 0x20130000 (irq = 10) is a AK39
+ion: failed to create debug files.
+brd: module loaded
+loop: module loaded
+AK Motor Driver (c) 2013 ANYKA
+@@@ [akpcm_init]: enter @@@
+@@@ [akpcm_probe]: enter @@@
+akpcmL0->ak39_codec_probe enter...
+@@@ [akpcm_probe:357]: akpcm initialize OK! @@@
+@@@ [set_channel_source:105]: addr=2, src=2 @@@
+@@@ [set_channel_source:153]: src=2, s_dac=0, s_linein=0, s_mic=1 @@@
+akpcm probe: mic on
+akpcm_probe: OK
+
+akisp_init
+Start to init Anyka SPI Flash...
+Start to init Anyka partition table...
+AK SPI Driver, (c) 2012 ANYKA
+akpi regs: SPICON:00000152, SPISTA:00000015, SPIINT:00000000.
+ak-spi ak-spi: master is unqueued, this is deprecated
+ak_spi setup the master.
+pre-scaler=2 (wanted 20Mhz, got 20Mhz)
+ak spiflash probe enter.
+pre-scaler=2 (wanted 20Mhz, got 20Mhz)
+ak_spi_setupxfer,con:00000252.
+akspi flash ID: 0x005e4017
+ak-spiflash spi0.0: ZB25VQ64 (8192 Kbytes)
+FHA:partition lib version: V1.1.06
+FHA:spiflash init
+FHA:boot block num offset:427
+FHA:Sflash_Get_Partition_Startpage g_boot_len:752
+mtd_part[0]:
+name = KERNEL
+size = 0x200000
+offset = 0x31000
+mask_flags = 0x1
+
+mtd_part[1]:
+name = MAC
+size = 0x1000
+offset = 0x231000
+mask_flags = 0x1
+
+mtd_part[2]:
+name = ENV
+size = 0x1000
+offset = 0x232000
+mask_flags = 0x1
+
+mtd_part[3]:
+name = A
+size = 0x180000
+offset = 0x233000
+mask_flags = 0x1
+
+mtd_part[4]:
+name = B
+size = 0x7d000
+offset = 0x3b3000
+mask_flags = 0x1
+
+mtd_part[5]:
+name = C
+size = 0x3b6000
+offset = 0x430000
+mask_flags = 0x1
+
+Creating 6 MTD partitions on "spi0.0":
+0x000000031000-0x000000231000 : "KERNEL"
+0x000000231000-0x000000232000 : "MAC"
+0x000000232000-0x000000233000 : "ENV"
+0x000000233000-0x0000003b3000 : "A"
+0x0000003b3000-0x000000430000 : "B"
+0x000000430000-0x0000007e6000 : "C"
+Init AK SPI Flash finish.
+akspi master initialize success, use for DMA mode.
+AK39E_MAC Ethernet Driver, V1.0
+input: akgpio-keys as /devices/platform/akgpio-keys/input/input0
+We're Using Internal RC OSC.
+AK RTC, (c) 2010 ANYKA 
+ak-rtc ak-rtc: rtc core: registered ak-rtc as rtc0
+i2c /dev entries driver
+AK MCI Driver (c) 2010 ANYKA
+akmci_probe : MCI
+## MMC Power: GPIO42 Setup
+akmci ak_mci.0: Mci Interface driver.mmc0. using l2dma, sw IRQ. detect mode:GPIO detect.
+Registered led device: red_led
+Registered led device: blue_led
+Registered led device: gree_led
+Registered led device: blue1_led
+TCP: cubic registered
+NET: Registered protocol family 17
+lib80211: common routines for IEEE802.11 drivers
+lib80211_crypt: registered algorithm 'NULL'
+ak-rtc ak-rtc: setting system clock to 1980-01-01 00:00:11 UTC (315532811)
+VFS: Mounted root (squashfs filesystem) readonly on device 31:4.
+devtmpfs: mounted
+Freeing init memory: 108K
+mmc0: host does not support reading read-only switch. assuming write-enable.
+mmc0: new SDHC card at address 0007
+mmcblk0: mmc0:0007 SD32G 29.1 GiB 
+ mmcblk0: p1
+aksensor_module_init
+soc-camera-pdrv soc-camera-pdrv: Probing soc-camera-pdrv
+ak_camera ak_camera.39: AK Camera driver attached to camera 0
+f37_set_power_on
+f37_probe_id id:0xa63
+gc2053_set_power_on
+gc2053_probe_id id:0xffff
+h63_set_power_on
+aksensor 0-0001: probe_sensors Probing Sensor ID: 0xa63
+ak_camera ak_camera.39: AK Camera driver detached from camera 0
+ak_camera ak_camera.39: AK Camera driver loaded
+ak_info_dump_init
