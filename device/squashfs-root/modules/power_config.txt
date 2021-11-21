@@ -1,0 +1,23 @@
+11f(n_mode):0x45
+##
+120(b_mode):0x35
+##power offset with g and n mode!##
+g_n_offset:0x05
+##
+8a1:0x6820
+8a2:0x6820
+8a3:0x6820
+8a4:0x6820
+8a5:0x6820
+8a6:0x6820
+8a7:0x6820
+8a8:0x6820
+8a9:0x6820
+8a10:0x6820
+8a11:0x6820
+8a12:0x6820
+8a13:0x6820
+8a14:0x6820
+##Crystal frequency offset calibration value, bit0 reserved##
+1da:0x80
+%%
