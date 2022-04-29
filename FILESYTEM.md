@@ -1,4 +1,4 @@
-The layout of the filesystem can be seen during boot, and is captured in a logfile in /tmp (/start_message).
+The layout of the filesystem can be seen during boot, and is captured in a logfile in [/tmp/start_message] (./start_message).
 ```
 Creating 6 MTD partitions on "spi0.0":
 0x000000031000-0x000000231000 : "KERNEL"

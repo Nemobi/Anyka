@@ -2,7 +2,7 @@
 
 ## About the device ##
 
-Anyka is a subdevision of Shenzen [citation needed] and a manufacturer of video-enabled SoC's. There are
+Anyka Techonologies Corp. is a manufacturer of video-enabled SoC's. There are
 many different brands of wifi-cameras which use Anyka chips, and many can be found in cheap security cameras on markets such as Amazon, Banggood and Ali-Express.
 
 These devices are (in my exprecience) always tied to a companion app for Android or iOS, which you can use to change settings and watch a live feed from the camera or recordings from the SD card. What companion app a specific device is intended for isn't disclosed at the time of purchase, instead you get a QR-encoded shortened url which directs you to a download. Usually this redirects to Google Play or Apple App Store, but sometimes you end up with a simple html page with an apk-file which you need to side-load to use.
