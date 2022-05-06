@@ -35,6 +35,16 @@ An SDK for the device can be found at <https://github.com/Nemobi/ak3918ev300v18/
 
 A crosscompiler toolchain can be found at <https://github.com/ricardojlrufino/arm-anykav200-crosstool>
 
+## Docker 
+
+A complete crosstool environment with the SDK can be found at <hub.docker.com/nemobi/anyka_ak3918ev300v18_sdk>.
+By default this image will set up a crosstool build environment and build a default configuration and output the firmware files.
+
+### Usage
+```
+docker run -v output:/output nemobi/anyka_ak3918ev300v18_sdk
+```
+
 ## Getting a root shell on the device ##
 
 Follow [this](/ROOT_ACCESS.md) guide to get root access.
