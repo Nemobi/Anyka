@@ -25,11 +25,11 @@ My atempt here is to harden the device and make it usable without the companion 
 
 ### RTSP Server
 
-A basic RTSP server was already available on my device, it can bu run with `/usr/bin/ak_rtsp_demo`. It does no however provide any form of authentication.
+Devices that was built using the Anyka SDK usually already contains a simple RTSP server, `/usr/bin/ak_rtsp_demo`. Unfortunately it doesn't provide any form of authentication. The main process, anyka_ipc, can also be built to include an RTSP server by settings `CONFIG_RTSP_SUPPORT = y` when building from the SDK.
 
 ### SDK
 
-An SDK for the device can be found at <https://github.com/Nemobi/ak3918ev300v18/>.
+The SDK for the device can be found at <https://github.com/Nemobi/ak3918ev300v18/>. Crosstool-ng can be used to build the sdk but it's much easier to use the pre-configured tools below.
 
 ### Build tools
 
